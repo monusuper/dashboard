@@ -29,5 +29,18 @@
             <br>With features ranging from moderation and utility to fun and anime commands, Aetherion is your go-to bot for everything.
         </p>
     </main> 
+    <audio autoplay loop>
+        <source src="tobu.mp3" type="audio/mpeg">
+        <source src="tobu.ogg" type="audio/ogg">
+        Your browser does not support the audio tag.
+    </audio>
+    <script>
+      window.onload = () => {
+        const audio = document.querySelector('audio');
+        audio.play().catch(error => {
+          console.log('Autoplay blocked:', error);
+        });
+      };
+    </script>
 </body>
 </html>
