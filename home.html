@@ -36,5 +36,14 @@
             Explore the powerful capabilities of Aetherion, an advanced bot designed for anime, music, moderation, and more!
         </p>
     </main>
+    <script>
+      window.onload = () => {
+        const audio = document.querySelector('audio');
+        audio.play().catch(error => {
+          console.log('Autoplay blocked:', error);
+        });
+      };
+    </script>
+
 </body>
 </html>
